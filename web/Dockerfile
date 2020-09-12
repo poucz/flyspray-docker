@@ -17,8 +17,8 @@ RUN echo "<VirtualHost *:80> \n DocumentRoot /var/www/html/flyspray \n </Virtual
 #RUN tar -xf master.tar.gz -C /var/www/html/ && \
 #  mv /var/www/html/flyspray-master /var/www/html/flyspray
 
-
-RUN git clone https://github.com/Flyspray/flyspray.git
+RUN git clone https://github.com/poucz/flyspray.git
+#RUN git clone https://github.com/Flyspray/flyspray.git
 
 #DEBUG:
 RUN cd /var/www/html/ && echo "<?php\n phpinfo(); \n ?>" > index.php
